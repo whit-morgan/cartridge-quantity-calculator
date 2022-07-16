@@ -1,3 +1,5 @@
+
+//test that the file is properly linked to the index.html
 document.querySelector('#calculateCartridges').addEventListener('click', changeColor)
 
 function changeColor(){

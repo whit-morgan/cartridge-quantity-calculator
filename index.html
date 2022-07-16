@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cartridge Calculator</h1>
+    <h3>Use this tool to calculate how many cartridges you can load given the amount of materials you have available.</h3>
+    <p>To use the tool, enter the amount of each material in the provided field, select how many grains of powder will be used for the cartridge you wish to load, and then choose the appropriate case from the dropdown. The tool is currently limited to pistol calibers only.</p>
+        <section>
+            <p>Materials you have</p>
+            <input type="text" name="" id="bulletAmt" placeholder="Number of bullets">
+            <input type="text" id="primerAmt" placeholder="Number of primers">
+            <input type="text" name="" id="casingAmt" placeholder="Amount of casings (lbs)">
+            <input type="text" name="" id="powderAmt" placeholder="Amount of powder (lbs)">
+        </section>
+        <section>
+            <p>The amount of powder used and case type</p>
+            <input type="text" id="powderUsed" placeholder="Powder used (grains)">
+
+            <select name="" id="chooseCase">
+                <option value="">--Choose a case--</option>
+                <option value="9mm">9mm</option>
+                <option value="40sw">.40 S&W</option>
+            </select>
+        </section>
+        <section>
+            <button id="calculateCartridges">Calculate</button>
+        </section>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "cartridge-quantity-calculator",
+  "description": "Calculator for determining the amount of cartridges that can be loaded from provided materials.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whit-morgan/cartridge-quantity-calculator.git"
+  },
+  "author": "Whit Morgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whit-morgan/cartridge-quantity-calculator/issues"
+  },
+  "homepage": "https://github.com/whit-morgan/cartridge-quantity-calculator#readme"
+}

@@ -64,7 +64,7 @@ h3{
 input{
   margin: 3px 3px 3px 3px;
   border-radius: 3px; 
-  max-width: 100%; 
+  width: 100%; 
 } 
 
 div {

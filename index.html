@@ -4,42 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Patua+One&family=Fugaz+One&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
+    <main>
     <h1>Cartridge Calculator</h1>
-    <h3>Use this tool to calculate how many cartridges you can load given the amount of materials you have available.</h3>
-    <p>To use the tool, enter the amount of each material in the provided field, select how many grains of powder will be used for the cartridge you wish to load, and then choose the appropriate case from the dropdown. The tool is currently limited to pistol calibers only.</p>
-        <section>
-            <p>Materials you have</p>
+    <h3>How many cartridges you can load given the materials you have available?</h3>
+    <p>To use the tool, enter the amount of each material in the provided field, select how many grains of powder will be used for the cartridge you wish to load, and then choose the appropriate case from the dropdown.</p>
+    <div>
+    <section class="testSection">
+            <h3>Materials you have</h3>
             <input type="text" name="" id="bulletAmt" placeholder="Number of bullets">
             <input type="text" id="primerAmt" placeholder="Number of primers">
             <input type="text" name="" id="casingAmt" placeholder="Amount of casings (lbs)">
             <input type="text" name="" id="powderAmt" placeholder="Amount of powder (lbs)">
         </section>
 
-        <section>
-            <p>The amount of powder used and case type</p>
-            <input type="text" id="powderUsed" placeholder="Powder used (grains)">
+        <section class="testSection">
+            <h3>Powder used and case type</h3>
+            <input class="test" type="text" id="powderUsed" placeholder="Powder used (grains)">
 
             <select name="" id="chooseCase">
                 <option value="">--Choose a case--</option>
+                <option value=".380">.380</option>
                 <option value="9mm">9mm</option>
+                <option value="38spl">38 Special</option>
+                <option value=".357mag">.357 Magnum</option>
                 <option value="40sw">.40 S&W</option>
+                <option value=".45acp">.45 ACP</option>
+                <option value="10mm">10mm</option>
+                <option value=".38super">.38 Super</option>
+                <option value=".223">.223 Rem</option>
+                <option value="308">.308 Win</option>
+                <option value=".30-06">.30-06</option>
+                <option value="7.62x39">7.62x39</option>
+                <option value="'.30-30">.30-30</option>
+                <option value="50bmg">50 BMG</option>
             </select>
         </section>
+    </div>
 
         <section>
-            <button id="calculateCartridges">Calculate</button>
+            <button id="calculateCartridges">CALCULATE</button>
         </section>
 
         <section>
-            <h3>Cartridges you can load: <span id="finalNum"></span></h3>
+            <span id="finalNum"></span>
         </section>
 
-
+    </main>
     <script src="/js/main.js"></script>
 </body>
 </html>

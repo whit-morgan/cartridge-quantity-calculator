@@ -2,8 +2,20 @@ document.querySelector('#calculateCartridges').addEventListener('click', calcula
 
 function calculate(){
     const casingsPerPound = {
+        '.380': 145,
         '9mm': 117,
-        '40sw': 100
+        '38spl': 102,
+        '.357mag': 89,
+        '40sw': 100,
+        '.45acp': 78,
+        '10mm': 96,
+        '.38super': 104,
+        '.223': 73,
+        '308': 40,
+        '.30-06': 35,
+        '7.62x39': 54,
+        '.30-30': 52,
+        '50bmg': 8
     }
 
     //values pulled from the html form set into variables
@@ -24,7 +36,8 @@ function calculate(){
     console.log(materials)
 
     //display the max number of makeable cartridges in the dom
-    document.querySelector('#finalNum').innerText = materials.sort((a, b) => a - b)[0]
+    document.querySelector('#finalNum').innerText =`You can load ${materials.sort((a, b) => a - b)[0]} cartridges`
+
 }
 
 
